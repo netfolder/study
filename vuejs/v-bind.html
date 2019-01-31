@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>디렉티브 ( v-bind ) 동적으로 추가 제거 수정</title>
+		
+		<style>
+			button{background-color:red; margin:0 5px; font-size: 30px;}
+			button.active{background-color: blue;}
+		
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		
+		<!--
+			v-bind: -> :  
+			v-on: - > @
+		-->
+		<!--동적바인드 v-bind -->
+		<div id="app">
+			<button v-for="p in pages" v-bind:class="{ 'active' : page === p }" v-on:click="page = p" >{{ p }}</button>
+			<hr>
+			<div v-for="p in pages" v-if="page === p">
+				<!--data 의 page 값 "page1" 와 반복된 pages[] 의 값이 같으면-->
+				<p>{{ p }} contents</p>
+				<img v-bind:src="'img/'+ p + '.png'" v-bind:alt="'img/'+ p + '.png'">
+			</div>
+		</div>
+		
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script>
+		
+			//v-bind
+			var app = new Vue({
+				el:'#app',
+				data:{
+					page:"page1",
+					pages:["page1","page2","page3","page4"]
+				}
+			})
+			
+		</script>
+	</body>
+</html>

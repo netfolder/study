@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>디렉티브 ( v-if , v-show )</title>
+	</head>
+	<body>
+	
+		<div id="app">
+			<h1 v-if="visible">나는 보입니다.</h1> <!--소스보기시 아에 사라짐 가급적 v-if 를 사용합니다. -->
+			<h1 v-show="visible">나는 보입니다.</h1> <!--소스보기시 display:none 처리됨-->
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js"></script>
+		<script>
+			var app = new Vue({
+				el:'#app',
+				data:{
+					visible: false
+				}
+			})
+		</script>
+	</body>
+</html>

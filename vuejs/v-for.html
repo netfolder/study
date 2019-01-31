@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>디렉티브 ( v-for )</title>
+		<style>
+			table{text-align: center;}
+		</style>
+	</head>
+	<body>
+	
+		<div id="app">
+			<ul>
+				<li v-for="n in numbers">{{n}}</li>
+			</ul>
+			<table>
+				<thead>
+					<tr>
+						<td>이름</td>
+						<td>나이</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr v-for="p in people" v-if="p.age >=30 ">
+						<!-- people 를 바인딩해주는데 나이가 30살이상만 보이게 하고싶다. -->
+						<td>{{ p.name }}</td>
+						<td>{{ p.age }}</td>						
+					</tr>
+				
+				</tbody>
+			</table>
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js"></script>
+		<script>
+			var app = new Vue({
+				el:'#app',
+				data:{
+					numbers: [1,2,3,4,5,6,7],
+					people:[
+						{
+							name:'이순신1',
+							age:29
+							
+						},
+						{
+							name:'이순신2',
+							age:32
+
+						},
+						{
+							name:'이순신3',
+							age:33
+						}
+					]
+				}
+			})
+		</script>
+	</body>
+</html>

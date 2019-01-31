@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>firstApp</title>
+	</head>
+	<body>
+	
+		<div id="app">
+			<div>{{message}}</div>  <!-- 단방향 바인딩 되었다 -->
+			<input type="text" v-model="message" /> 
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js"></script>
+		<script>
+			var firstApp = new Vue({
+				el:'#app',
+				data: {
+					message: '첫 번째 vue.js 앱!'
+				}
+			})
+		</script>
+	</body>
+</html>

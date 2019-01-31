@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>매모 앱</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <div id="app" class="app">
+      <div class="head">
+        <span class="listBtn" v-if="mode !== 'list'" v-on:click="mode = 'list'">&lt;</span>
+        <span class="title">메모앱</span>
+      </div>	
+      <div class="body">
+        <div class="list" v-if="mode === 'list'">
+          <ul>
+            <li v-for="m in memos" v-on:click="open(m.id)">{{ m.content }}</li>					
+          </ul>
+        </div>
+        <div class="write" v-else>         
+          <textarea v-model="memo.content"></textarea>
+          <button class="saveBtn" type="button" v-on:click="save()" v-bind:class="{'full' : mode === 'write'}">저장</button>          
+          <button class="removeBtn" type="button" v-on:click="remove()" v-if="mode === 'edit'">삭제</button>          
+        </div>
+        <button class="addBtn" type="button" v-on:click="write()" v-if="mode === 'list'">+</button>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>디렉티브 ( v-on )</title>
+	</head>
+	<body>
+	
+		<div id="app">
+		
+			<!--
+			<h1 v-if="visible">나는 보입니다.</h1>
+			<button v-on:click="visible = !visible">버튼</button>
+			<br>
+			<button v-on:click="alert('버튼을 클릭을 했다.')">버튼</button>
+			<br>
+			<button v-on:dblclick="alert('더블 버튼을 클릭을 했다.')">더블 버튼</button>
+			-->
+			
+			<!--개발자가 직접 만든 함수를 호출하는방법-->
+			<botton v-on:click="add()">버튼</botton>
+			<ul>				
+				<li v-for="n in numbers">{{n}}</li>
+			</ul>
+			
+			
+			<input type="text" v-model="animal" v-on:keyup.enter="capture()">
+			<ul>				
+				<li v-for="n in animals">{{n}}</li>
+			</ul>
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js"></script>
+		<script>
+			var app = new Vue({
+				el:'#app',
+				data:{
+					visible:true,
+					numbers:[1,2,3,4,5],
+					animal:null,
+					animals:["lion" , "tiger" ,"dog" ,"cat" , "eagle"]
+				},
+				methods:{
+					add:function(){
+						var lastNum = this.numbers[this.numbers.length-1]
+						lastNum+=1;
+						this.numbers.push(lastNum)
+					},
+					capture:function(){
+						//animal 이라는 값이 있을때 
+						if(this.animal){
+							this.animals.push(this.animal);
+							this.animal = null;
+						}
+					}
+				}
+			})
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

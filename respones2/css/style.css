@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* 레이아웃 */
+#header{background: url(../img/header_bg.jpg) repeat-x center top;}
+
+/* 컨테이너 */
+.container{position: relative; width: 1200px; margin: 0 auto; /*background: rgba(0,0,0,0.3);*/}
+
+/* 헤더 */
+.header{height: 327px;}
+.header .header_menu{text-align: right; }
+.header .header_menu a{color:#fff; padding:8px 0 6px 10px; display: inline-block; transition: all 0.3s ease-in-out; font-family: 'Abel', sans-serif;}
+.header .header_menu a:hover{color:#ccc;}
+.header .header_tit{ text-align: center;  text-transform: uppercase; margin-top: 55px; font-family: 'Abel', sans-serif;}
+.header .header_tit h1{
+	font-size: 30px; color:#fff; background: #51d0dc; 
+	display: inline-block; padding:15px 30px 13px 30px; 
+	letter-spacing: 2px; font-weight: 900;
+	cursor:pointer;
+	transition: box-shadow 0.25s ease-in-out;
+}
+.header .header_tit a{
+	font-size: 16px; color:#fff; 
+	background: #4a9abf; display: inline-block; 
+	padding:10px 20px 10px 20px; 
+	margin-top:-7px;
+	transition: box-shadow 0.25s ease-in-out;
+}
+.header .header_tit h1:hover{
+	/* 마우스 오버시 안쪽에 그림자 효과  inset 안쪽으로   (( , )) 로 여러 효과 중복사용 em 을 사용하여 상대적으로 사이즈 기준을 잡음 */
+	box-shadow: 
+		inset -9em 0 0 0 #257fac ,
+		inset 9em 0 0 0 #257fac;
+}
+.header .header_tit a:hover{
+	box-shadow:
+		inset 0 0 0 5px rgba(75,154,191,0.9),
+		inset 0 0 0 100px rgba(0,0,0,0.1);
+}
+.header .header_icon{text-align: center; margin-top:52px; padding-bottom: 45px;}
+.header .header_icon li{display: inline-block; position: relative;}
+.header .header_icon li a{
+	display: inline-block; 
+	margin: 0 2px;
+ 	background-color: #3192bf; 
+ 	border-radius: 50%; 
+ 	width: 60px; height: 60px; color:#fff;
+ 	font-size: 35px;
+ 	line-height: 60px;
+ 	transition: box-shadow 0.3s ease-in-out;
+}
+.header .header_icon li a span{
+	position: absolute; 
+	left: 50%; top:-40px; 
+	transform: translateX(-50%);
+	font-size: 12px;	
+	line-height: 1.6;
+	background: #3192bf;
+	padding: 3px 9px;	
+	border-radius: 6px 0;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+.header .header_icon li a span:before{
+		/* 아이콘에 밑으로 삼각형 표현 */
+		content: ''; position: absolute; left: 50%;	top: 23px;		
+		display:inline-block; width:0; height:0; border-style:solid; border-width:9px;
+		border-color:#3192bf transparent transparent transparent;
+		transform: translateX(-50%);
+}
+
+.header .header_icon li:hover a span{
+	top:-34px;
+	opacity: 1;
+}
+.header .header_icon li a:hover{
+	box-shadow: 
+	0 0 0 5px rgba(75,154,191,0.9) inset,
+	0 0 0 100px rgba(0,0,0,0.1) inset
+}	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mediaquery */
+@media (max-width:1220px){
+	.container{width: 100%;	}
+	.row{padding:0 15px;}
+}

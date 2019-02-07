@@ -29,24 +29,24 @@
     <link rel="apple-touch-icon-precomposed" href="icon/favicon-152.png">
     <link rel="icon" href="path/to/favicon.png">
     <!-- <link rel="icon" href="icon/favicon-16.png" sizes="16x16"> 
-    <link rel="icon" href="icon/favicon-32.png" sizes="32x32"> 
-    <link rel="icon" href="icon/favicon-48.png" sizes="48x48"> 
-    <link rel="icon" href="icon/favicon-64.png" sizes="64x64"> 
-    <link rel="icon" href="icon/favicon-128.png" sizes="128x128"> -->
-    
+<link rel="icon" href="icon/favicon-32.png" sizes="32x32"> 
+<link rel="icon" href="icon/favicon-48.png" sizes="48x48"> 
+<link rel="icon" href="icon/favicon-64.png" sizes="64x64"> 
+<link rel="icon" href="icon/favicon-128.png" sizes="128x128"> -->
+
     <!-- 웹 폰트 -->
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    
+
     <!-- html5코드를 이전브라우져에서 인식시켜주는 소스  -->
     <!-- HTLM5shiv ie6~8 -->
     <!--[if lt IE 9]> 
-    <script src="js/html5shiv.min.js"></script>
-    <script type="text/javascript">
-    alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트해주세요!");
-    </script>
-    <![endif]-->
+<script src="js/html5shiv.min.js"></script>
+<script type="text/javascript">
+alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트해주세요!");
+</script>
+<![endif]-->
   </head>
   <body>
     <header id="header">
@@ -74,9 +74,9 @@
             </div>
             <!-- //header_icon -->
             <!-- facebook twitter sns공유하기 미리보기
-            https://developers.facebook.com/tools/debug/
-            https://cards-dev.twitter.com/validator
-            -->
+https://developers.facebook.com/tools/debug/
+https://cards-dev.twitter.com/validator
+-->
           </div>
         </div>
       </div>
@@ -142,9 +142,9 @@
       </div>
     </nav>
     <!-- //nav -->
-    
+
     <article id="title">
-      
+
       <div class="container">
         <div class="title">
           <h2>"나는 퍼블리셔다"</h2>
@@ -154,33 +154,42 @@
       </div>
     </article>
     <!-- //title -->
-    
+
     <main>
-      <section>
-        <h2>반응형 사이트 컨테이너</h2>
-        <section>
-          <h3>반영형 사이트 왼쪽 컨텐츠</h3>
-          <article><h4>반응형사이트 왼쪽 컨텐츠1</h4></article>
-          <article><h4>반응형사이트 왼쪽 컨텐츠2</h4></article>
-          <article><h4>반응형사이트 왼쪽 컨텐츠3</h4></article>
-        </section>
-        <section>
-          <h3>반영형 사이트 가운데 컨텐츠</h3>
-          <article><h4>반응형사이트 가운데 컨텐츠1</h4></article>
-          <article><h4>반응형사이트 가운데 컨텐츠2</h4></article>
-          <article><h4>반응형사이트 가운데 컨텐츠3</h4></article>
-        </section>
-        <section>
-          <h3>반영형 사이트 오른쪽 컨텐츠</h3>
-          <article><h4>반응형사이트 오른쪽 컨텐츠1</h4></article>
-          <article><h4>반응형사이트 오른쪽 컨텐츠2</h4></article>
-          <article><h4>반응형사이트 오른쪽 컨텐츠3</h4></article>
-        </section>
+      <section id="contents">
+        <div class="container">   
+          <h2 class="ir_su">반응형 사이트 컨테이너</h2>
+          <section id="cont_left">
+            <h3 class="ir_su">반영형 사이트 왼쪽 컨텐츠</h3>
+            <article class="column col1"><h4>반응형사이트 왼쪽 컨텐츠1</h4></article>
+            <article class="column col2"><h4>반응형사이트 왼쪽 컨텐츠2</h4></article>
+            <article class="column col3"><h4>반응형사이트 왼쪽 컨텐츠3</h4></article>
+          </section>
+          <section id="cont_center">
+            <h3 class="ir_su">반영형 사이트 가운데 컨텐츠</h3>
+            <article class="column col4"><h4>반응형사이트 가운데 컨텐츠1</h4></article>
+            <article class="column col5"><h4>반응형사이트 가운데 컨텐츠2</h4></article>
+            <article class="column col6"><h4>반응형사이트 가운데 컨텐츠3</h4></article>
+          </section>
+          <section id="cont_right">
+            <h3 class="ir_su">반영형 사이트 오른쪽 컨텐츠</h3>
+            <article class="column col7"><h4>반응형사이트 오른쪽 컨텐츠1</h4></article>
+            <article class="column col8"><h4>반응형사이트 오른쪽 컨텐츠2</h4></article>
+            <article class="column col9"><h4>반응형사이트 오른쪽 컨텐츠3</h4></article>
+          </section>
+        </div>
       </section>
+      <!-- //content -->
     </main>
-    <footer>
-      <h2>반응형 사이트 푸터</h2>
+    
+    <footer id="footer">
+      <div class="container">
+        <h2>반응형 사이트 푸터</h2>  
+      </div>
+
     </footer>
+    <!-- //footer -->
+
     <!-- JavaScript Libraries -->
     <script src="js/jquery.min_1.12.4.js"></script>
     <!-- 브라우져 지원 요소 체크  -->

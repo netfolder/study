@@ -2,6 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
     <title>respones 2019</title>
     <meta name="author" content="webstoryboy">
     <meta name="description" content="반응형 사이트 따라하기 2019">
@@ -28,20 +29,24 @@
     <link rel="apple-touch-icon-precomposed" href="icon/favicon-152.png">
     <link rel="icon" href="path/to/favicon.png">
     <!-- <link rel="icon" href="icon/favicon-16.png" sizes="16x16"> 
-<link rel="icon" href="icon/favicon-32.png" sizes="32x32"> 
-<link rel="icon" href="icon/favicon-48.png" sizes="48x48"> 
-<link rel="icon" href="icon/favicon-64.png" sizes="64x64"> 
-<link rel="icon" href="icon/favicon-128.png" sizes="128x128"> -->
-    <!-- 웹폰트 -->
+    <link rel="icon" href="icon/favicon-32.png" sizes="32x32"> 
+    <link rel="icon" href="icon/favicon-48.png" sizes="48x48"> 
+    <link rel="icon" href="icon/favicon-64.png" sizes="64x64"> 
+    <link rel="icon" href="icon/favicon-128.png" sizes="128x128"> -->
+    
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    
     <!-- html5코드를 이전브라우져에서 인식시켜주는 소스  -->
     <!-- HTLM5shiv ie6~8 -->
     <!--[if lt IE 9]> 
-<script src="js/html5shiv.min.js"></script>
-<script type="text/javascript">
-alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트해주세요!");
-</script>
-<![endif]-->
+    <script src="js/html5shiv.min.js"></script>
+    <script type="text/javascript">
+    alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트해주세요!");
+    </script>
+    <![endif]-->
   </head>
   <body>
     <header id="header">
@@ -137,9 +142,19 @@ alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신
       </div>
     </nav>
     <!-- //nav -->
-    <article>
-      <h2>반응형 사이트 서브 타이틀</h2>
+    
+    <article id="title">
+      
+      <div class="container">
+        <div class="title">
+          <h2>"나는 퍼블리셔다"</h2>
+          <a href="#" class="btn"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          <span class="ir_su">전체메뉴 보기</span>
+        </div>
+      </div>
     </article>
+    <!-- //title -->
+    
     <main>
       <section>
         <h2>반응형 사이트 컨테이너</h2>

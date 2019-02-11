@@ -2,8 +2,7 @@
 
 ### 참고
   
-  [디스플레이 이미지 밀도](https://webkit.org/demos/srcset/)<br />
-    THE srcset Attribute : 디바이스에 맞는 이미지 배율 선택 참고
+  - [디스플레이 이미지 밀도](https://webkit.org/demos/srcset/) : THE srcset Attribute : 디바이스에 맞는 이미지 배율 선택 참고 <br />
 
 #### Link
   

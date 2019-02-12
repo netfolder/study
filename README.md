@@ -5,6 +5,7 @@
   - [디스플레이 이미지 밀도](https://webkit.org/demos/srcset/) : THE srcset Attribute : 디바이스에 맞는 이미지 배율 선택 참고 <br />
   - [slick.js](http://kenwheeler.github.io/slick/) : 이미지슬라이더 <br />
   - [lightGallery.js](http://sachinchoolur.github.io/lightGallery/docs/) : Lightgallery는 아름다운 이미지 및 비디오 갤러리를 만들 수있는 가벼운 모듈 식 반응 형 jquery 라이트 박스 갤러리입니다. <br />
+  - [font Awesome](https://fontawesome.com/v4.7.0/) : 아이콘 글꼴 및 CSS 툴킷 <br />
 
 #### Link
   

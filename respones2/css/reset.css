@@ -38,7 +38,7 @@ button{border:0;}
 .clearfix:after {clear:both;}
 
 /* 반응형 img */
-img {width: 100%; display: block;}
+img ,video{width: 100%; display: block;}
 
 /* 가로모드 글씨 크기 초기화 */
 html{

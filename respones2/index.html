@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/font-awesome.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/lightgallery.css">
     
     <!-- Facebook meta tags -->
     <meta property="og:type" content="article">
@@ -31,10 +32,10 @@
     <link rel="apple-touch-icon-precomposed" href="icon/favicon-152.png">
     <link rel="icon" href="path/to/favicon.png">
     <!-- <link rel="icon" href="icon/favicon-16.png" sizes="16x16"> 
-<link rel="icon" href="icon/favicon-32.png" sizes="32x32"> 
-<link rel="icon" href="icon/favicon-48.png" sizes="48x48"> 
-<link rel="icon" href="icon/favicon-64.png" sizes="64x64"> 
-<link rel="icon" href="icon/favicon-128.png" sizes="128x128"> -->
+    <link rel="icon" href="icon/favicon-32.png" sizes="32x32"> 
+    <link rel="icon" href="icon/favicon-48.png" sizes="48x48"> 
+    <link rel="icon" href="icon/favicon-64.png" sizes="64x64"> 
+    <link rel="icon" href="icon/favicon-128.png" sizes="128x128"> -->
 
     <!-- 웹 폰트 -->
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
@@ -44,11 +45,11 @@
     <!-- html5코드를 이전브라우져에서 인식시켜주는 소스  -->
     <!-- HTLM5shiv ie6~8 -->
     <!--[if lt IE 9]> 
-<script src="js/html5shiv.min.js"></script>
-<script type="text/javascript">
-alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트해주세요!");
-</script>
-<![endif]-->
+    <script src="js/html5shiv.min.js"></script>
+    <script type="text/javascript">
+    alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트해주세요!");
+    </script>
+    <![endif]-->
   </head>
   <body>
     <header id="header">
@@ -264,51 +265,74 @@ https://cards-dev.twitter.com/validator
             </article>
             <!-- //col4 -->
             <article class="column col5">
-              <h4 class="col_tit">Title</h4>
-              <p class="col_desc">설명부분</p>
-              <!-- -->
-
-
-              <!-- // -->
+              <h4 class="col_tit">Blend Effect</h4>
+              <p class="col_desc">background-blend-mode and mix-blend-mode</p>
+              <!-- light box -->                
+              <div class="lightbox square clearfix">
+                <a href="img/light01_s.jpg"><img src="img/light01.jpg" alt="이미지"><em>blur</em></a>
+                <a href="img/light02_s.jpg"><img src="img/light02.jpg" alt="이미지"><em>brightness</em></a>
+                <a href="img/light03_s.jpg"><img src="img/light03.jpg" alt="이미지"><em>contrast</em></a>
+                <a href="img/light04_s.jpg"><img src="img/light04.jpg" alt="이미지"><em>grayscale</em></a>
+                <a href="img/light05_s.jpg"><img src="img/light05.jpg" alt="이미지"><em>hur-rotate</em></a>
+                <a href="img/light06_s.jpg"><img src="img/light06.jpg" alt="이미지"><em>invert</em></a>
+                <a href="img/light07_s.jpg"><img src="img/light07.jpg" alt="이미지"><em>opacity</em></a>
+                <a href="img/light08_s.jpg"><img src="img/light08.jpg" alt="이미지"><em>saturate</em></a>
+                <a href="img/light09_s.jpg"><img src="img/light09.jpg" alt="이미지"><em>sepia</em></a>
+                <a href="img/light10_s.jpg"><img src="img/light10.jpg" alt="이미지"><em>Mix</em></a>
+              </div>
+              <!-- //light box  -->
             </article>
             <!-- //col5 -->
             <article class="column col6">
-              <h4 class="col_tit">Title</h4>
-              <p class="col_desc">설명부분</p>
-              <!-- -->
-
-
-              <!-- // -->
+              <h4 class="col_tit">Video</h4>
+              <p class="col_desc">반응형 영상을 보여주는 영역입니다.</p>
+              <!-- video -->
+              <div class="video">
+                <!--<video autoplay="autoplay" controls="controls" loop="loop">
+                  <source src="img/video.mp4" type="video/mp4">
+                </video>-->
+                <iframe src="https://www.youtube.com/embed/-cgwk9JmU5M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <!-- //video -->
             </article>
             <!-- //col6 -->
           </section>
           <section id="cont_right">
             <h3 class="ir_su">반영형 사이트 오른쪽 컨텐츠</h3>
             <article class="column col7">
-              <h4 class="col_tit">Title</h4>
-              <p class="col_desc">설명부분</p>
-              <!-- -->
-
-
-              <!-- // -->
+              <h4 class="col_tit">Effect1</h4>
+              <p class="col_desc">css transform을 이용한 마우스 오버효과 입니다.</p>
+              <!-- side1 -->
+              <div class="side1">
+                <figure>
+                  <img src="img/side1.jpg" alt="이미지1">
+                </figure>
+              </div>
+              <!-- //side1 -->
             </article>
             <!-- //col7 -->
             <article class="column col8">
-              <h4 class="col_tit">Title</h4>
-              <p class="col_desc">설명부분</p>
-              <!-- -->
-
-
-              <!-- // -->
+              <h4 class="col_tit">Effect2</h4>
+              <p class="col_desc">css transform을 이용한 마우스 오버효과 입니다.</p>
+              <!-- side2 -->
+              <div class="side2">
+                <figure>
+                  <img src="img/side2.jpg" alt="이미지1">
+                </figure>
+              </div>
+              <!-- //side2 -->
             </article>
             <!-- //col8 -->
             <article class="column col9">
-              <h4 class="col_tit">Title</h4>
-              <p class="col_desc">설명부분</p>
-              <!-- -->
-
-
-              <!-- // -->
+              <h4 class="col_tit">Effect3</h4>
+              <p class="col_desc">css transform을 이용한 마우스 오버효과 입니다.</p>
+              <!-- side3 -->
+              <div class="side3">
+                <figure>
+                  <img src="img/side3.jpg" alt="이미지1">
+                </figure>
+              </div>
+              <!-- //side3 -->
             </article>
             <!-- //col9 -->
           </section>
@@ -330,12 +354,18 @@ https://cards-dev.twitter.com/validator
     <!-- 브라우져 지원 요소 체크  -->
     <script src="js/modernizr-custom.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    
     <script>
+      //라이트박스
+      
+      $(".lightbox").lightGallery(); 
+      
       //이미지 슬라이더
       $(".slider").slick({
         dots: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 4500,
         arrows: true,
         responsive: [
           {
@@ -343,7 +373,10 @@ https://cards-dev.twitter.com/validator
             settings: {
               autoplay:false,
               arrows: true,
-              dots: true
+              dots: true,
+              cssEase:"ease-in-out",
+              pauseOnFocus:true
+              
             }
           }
         ]

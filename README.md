@@ -6,6 +6,8 @@
   - [slick.js](http://kenwheeler.github.io/slick/) : 이미지슬라이더 <br />
   - [lightGallery.js](http://sachinchoolur.github.io/lightGallery/docs/) : Lightgallery는 아름다운 이미지 및 비디오 갤러리를 만들 수있는 가벼운 모듈 식 반응 형 jquery 라이트 박스 갤러리입니다. <br />
   - [font Awesome](https://fontawesome.com/v4.7.0/) : 아이콘 글꼴 및 CSS 툴킷 <br />
+  - [reset.css](https://github.com/netfolder/study/blob/master/menu_content/submenu/css/default.css) : html4 버젼용 <br />
+  - [reset.css](https://github.com/netfolder/study/blob/master/web/css/reset.css) : 웹접근성 웹표준에 사용 <br />
 
 #### Link
   

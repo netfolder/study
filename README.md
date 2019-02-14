@@ -30,3 +30,8 @@
   - [parallax11](http://webk.kr/home/study/parallax/parallax11.html)<br />
   - [parallax12](http://webk.kr/home/study/parallax/parallax12.html)<br />
   - [parallax13](http://webk.kr/home/study/parallax/parallax13.html)<br />
+  
+  
+####
+
+  - [faq따라하기](http://webk.kr/home/study/board_content/question.html)<br />

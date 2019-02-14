@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>접혔다 펼처지는 메뉴</title>
+    <link rel="stylesheet" href="css/default.css">
+    <style>
+      body{padding:50px;}
+      .sub{width: 213px;}
+      .sub h2{height: 86px;background-color: #36818c; color:#fff; padding:44px 0 0 18px; font-size: 27px;}
+      .sub h2 span{display: block; color:#fff; font-size: 16px;}
+      .sub > ul > li{border-bottom: 1px solid #e1e1e1;}
+      .sub > ul > li > a{position: relative;display: block; height:44px; line-height: 44px; font-size: 14px; font-weight: bold; color:#666; text-indent: 19px;}
+      /*.sub > ul > li:hover > a{color:#36818c;}
+      .sub > ul > li:hover > a:after{content:"";position: relative;margin-left:13px;top: 3.5px;display: inline-block;background: url(http://webk.kr/home/study/web/img/icon.png) -150px -90px no-repeat;width: 17px;height: 17px;}*/
+      .sub > ul ul{padding:0 0 4px 30px;}
+      .sub > ul ul li{padding-bottom: 4px;}    
+      .sub > ul ul li a{position: relative; font-size: 13px; color:#666; padding-left:10px; }
+      .sub > ul ul li:hover a{color:#36818c;}
+      .sub > ul ul li a:before{content: "";position: absolute;left: 0;top: 9px;width: 6px;height: 2px;background-color: #666;}
+      .sub > ul ul li a:hover:before{background-color: #36818c;}
+      .sub > ul ul {display: none;}
+      
+      
+      .sub > ul > li.on > a{color:#36818c;}
+      .sub > ul > li.on > a:after{content:"";position: relative;margin-left:13px;top: 3.5px;display: inline-block;background: url(http://webk.kr/home/study/web/img/icon.png) -150px -90px no-repeat;width: 17px;height: 17px;}
+      .sub > ul > li.on a + ul{display: block;}
+      
+      
+      .sub > ul > li.on > ul li a:focus{color:#36818c;}
+      .sub > ul > li.on > ul li a:focus:before{background-color: #36818c;}
+    </style>
+
+
+  </head>
+  <body>
+    <div class="sub">
+      <h2>투자정보<span>Investment</span></h2>
+      <ul>
+        <li class="active">
+          <a href="#">재무정보</a>    
+          <ul>
+            <li><a href="#">요약재무정보</a></li>
+            <li><a href="#">사업보고서</a></li>
+          </ul>    
+        </li>
+        <li>
+          <a href="#">주가정보</a>        
+        </li>
+        <li>
+          <a href="#">투자정보</a> 
+          <ul>
+            <li><a href="#">공시정보</a></li>
+            <li><a href="#">이사회</a></li>
+            <li><a href="#">주주총회</a></li>
+            <li><a href="#">이사회내 위원회</a></li>
+          </ul>        
+        </li>
+        <li>
+          <a href="#">IR</a>        
+        </li>
+        <li>
+          <a href="#">공지사항</a>        
+        </li>
+      </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.sub > ul > li > a').on('mouseenter focusin', function() {          
+          $(this).parent('li').addClass('on').siblings('li').removeClass('on');
+        });       
+      });
+    </script>
+  </body>
+</html>

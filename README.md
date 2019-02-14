@@ -12,7 +12,7 @@
 #### Link
   
   - [하이닉스 따라해본것](http://webk.kr/home/study/hynix/hynixCoding/index.html)<br />
-  - [웹표준,웹접근성 준수 사이트](http://webk.kr/home/study/web/index.html)<br />
+  - [웹표준,웹접근성 준수 사이트2018](http://webk.kr/home/study/web/index.html)<br />
   - [반응형사이트2018](http://webk.kr/home/study/respones/index.html)<br />
   - [반응형사이트2019](http://webk.kr/home/study/respones2/index.html)<br />
   
@@ -38,4 +38,4 @@
 
   - [faq따라하기](http://webk.kr/home/study/board_content/question.html)<br />
   - [서브메뉴따라하기 css1,css2](http://webk.kr/home/study/menu_content/submenu/submenu.html) : 접근성은 고려되지 않았음<br />
-  - [서브메뉴따라하기 css1,css2,javascript](http://webk.kr/home/study/menu_content/submenu/submenu2.html) : 접근성은 고려<br />
+  - [서브메뉴따라하기 css1,css2,javascript](http://webk.kr/home/study/menu_content/submenu/submenu2.html) : 접근성 고려<br />

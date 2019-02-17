@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/* 레이아웃 */
+#skip{}
+#wrap{min-width: 1080px;}
+#header{/*padding-top:40px;*/}
+#contents{}
+#footer{}
+
+button,
+button:focus,
+button:active{
+  padding: 0;
+}
+span{
+  position:relative;
+}
+
+
+
+
+
+/* 컨테이너 */
+.container{position: relative; width: 1080px; margin:0 auto; /*background: rgba(0,0,0,0.3);*/}
+
+
+/* 헤더 우측 링크 */
+.top_link_area{font-size: 10px; height: 40px;}
+.top_link_area .con{overflow: hidden; display: inline-block; float: right;}
+.top_link_area .tl1{
+  position: relative; float: left; color:#888888; 
+  font-size: 11px; line-height: 40px;padding-right:10px; margin-right: 10px; 
+  letter-spacing: -1px;
+}
+.top_link_area .tl1:hover{text-decoration: underline;}
+.top_link_area .tl1:after{
+  content:"";
+  position: absolute; right: 0; top:15px;;
+  width: 4px;height: 7px;  
+  background-image:url(../images/sp_main_v181019.png);
+  background-position: -159px -94px;
+  background-repeat: no-repeat;
+}
+.top_link_area p{
+  float: left; margin-top:14px; 
+  padding-left:9px; height: 11px; border-left: 1px solid #ebeef3;   
+}
+.top_link_area .tl2{
+  position: relative;
+  display: inline-block;
+  /*padding-left:9px;*/
+  width: 68px;height: 11px;
+  background-image:url(../images/sp_main_v181019.png);
+  background-position: 0px -120px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+/*.top_link_area .tl2:before{
+  content: ""; 
+  position: absolute; left: 0; top: 10px;
+  width: 1px; height: 11px; color:#888888;
+  z-index: 200;
+}*/
+.top_link_area .tl2:hover{ 
+  background-position: -68px -120px;
+}
+.top_link_area .tl3{
+  display: inline-block;
+  width: 34px;height: 11px;
+  background-image:url(../images/sp_main_v181019.png);
+  background-position: -143px -52px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+.top_link_area .tl3:hover{ 
+  background-position: -143px -73px;
+}
+
+/* 네이버로고 */
+.naver_logo{    
+  display: inline-block;
+  width: 207px; height: 50px;
+  margin-left:-2px;
+  background-image: url(../images/sp_search.png);
+  background-position: -4px -4px;
+  background-repeat: no-repeat;
+}
+.naver_logo a{display: block; width: 100%; height: 100%;}
+
+/* 검색영역 */
+.search {position: absolute; top:45px; left: 219px;}
+.search .s_box{
+  width: 474px; height: 49px;
+  border:2px solid #03cf5d;
+  box-sizing: border-box;
+  float: left;
+}
+.search .s_btn{
+  width: 49px; height: 49px; 
+  display: inline-block; 
+  background-color: #03cf5d;  
+  margin-left:-2px;
+  top:0; right: 0;
+ 
+}
+
+
+.search .s_btn .icon_search {  
+  display: inline-block;
+  width: 21px;height: 21px;  
+  background-image:url(../images/sp_search.png);
+  background-repeat: no-repeat;
+  background-position: -4px -60px;   
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

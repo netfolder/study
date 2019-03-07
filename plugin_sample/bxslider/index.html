@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>bxSlider</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<style>
+		.bx-wrapper{
+	     box-shadow: none !important; 
+	     border: none !important; 
+	     background: none !important; 
+		}
+		.bx-controls{
+			text-align: center !important;
+		}
+		.bx-controls > div{
+			display:inline-block!important;
+		}
+		.bx-pager {
+			position: static !important;
+			display:inline-block;
+	    text-align: center !important;
+	    width: auto !important;
+		}
+		.bx-controls-auto{
+			position: static !important;
+			z-index: 1000;
+			display:inline-block;			
+			right: none !important;
+	    width: auto !important;
+	    bottom:none !important;
+	  }
+	  /*list*/
+	  .txt{
+	  	position: absolute; 
+	  	padding: 0; margin:0; 
+	  	left:100px; top:0px; 
+	  	opacity: 0; 
+	  	transition: all 1.2s ease;
+	  }
+		.bxslider > div.active .txt{
+			left:0px;
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="bxslider">
+	  <div>
+	  	<p class="txt">sample01</p>
+	  	<img src="images/img01.jpg">
+	  </div>
+	  <div>
+	  	<p class="txt">sample02</p>
+	  	<img src="images/img02.jpg">
+	  </div>
+	  <div>
+	  	<p class="txt">sample03</p>
+	  	<img src="images/img03.jpg">
+	  </div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+	<script>
+		$('.bxslider').bxSlider({
+		  auto: true,
+		  autoControls: true,
+		  stopAutoOnClick: true,
+		  pager: true,
+		  slideWidth: 600,
+		  onSlideAfter:function(e){
+		  	console.log("after")
+		  	console.log($(e).attr('aria-hidden'))
+		  	$(e).addClass("active").siblings().removeClass("active")
+		  }
+		});
+
+		$('.bx-start').click(function(e){
+				e.preventDefault();
+				$(this).hide();
+				$('.bx-stop').show();
+		})
+		$('.bx-stop').click(function(e){
+				e.preventDefault();
+				$(this).hide();
+				$('.bx-start').show();
+		})
+		$('.bx-start').hide();
+	</script>
+</body>
+</html>

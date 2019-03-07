@@ -40,3 +40,9 @@
   - [faq따라하기](http://webk.kr/home/study/board_content/question.html)<br />
   - [서브메뉴따라하기 css1,css2](http://webk.kr/home/study/menu_content/submenu/submenu.html) : 접근성은 고려되지 않았음<br />
   - [서브메뉴따라하기 css1,css2,javascript](http://webk.kr/home/study/menu_content/submenu/submenu2.html) : 접근성 고려<br />
+  - [bxSlider 따라하기 ](http://webk.kr/home/study/plugin_sample/bxslider/index.html) : 접근성 고려<br />
+
+
+
+
+

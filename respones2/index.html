@@ -343,7 +343,24 @@ https://cards-dev.twitter.com/validator
     
     <footer id="footer">
       <div class="container">
-        <h2>반응형 사이트 푸터</h2>  
+        <div class="row">
+          <div class="footer">
+            <ul>
+              <li><a href="#">사이트 도움말</a></li>
+              <li><a href="#">사이트 이용약관</a></li>
+              <li><a href="#">사이트 운영원칙</a></li>
+              <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+              <li><a href="#">책임의 한계와 법적고지</a></li>
+              <li><a href="#">게시중단요청서비스</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+            <address>
+              Copyright ©
+              <a href="http://webstoryboy.co.kr"><strong>webstoryboy</strong></a>
+              All Rights Reserved.
+            </address>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- //footer -->
@@ -357,8 +374,28 @@ https://cards-dev.twitter.com/validator
     <script src="js/lightgallery.min.js"></script>
     
     <script>
+      /*메뉴 컨트롤*/
+      $(".btn").on("click" , function(e){
+        e.preventDefault();
+        $(".nav").slideToggle();
+        $(".btn").toggleClass("on")
+        
+        if($(".btn").hasClass("on")){
+          //on 클래스가 있을때
+          $(this).find("i").attr("class" , "fa fa-angle-up")
+        }else{
+          //on 클래스가 없을때
+          $(this).find("i").attr("class" , "fa fa-angle-down")
+        }
+      })
+      /*브라우져 축소시 메뉴 안보이게하기*/
+      $(window).resize(function(){
+        var wWidth = $(window).width();
+        if(wWidth < 600){
+          $(".nav").removeAttr("style")
+        }
+      })
       //라이트박스
-      
       $(".lightbox").lightGallery(); 
       
       //이미지 슬라이더
